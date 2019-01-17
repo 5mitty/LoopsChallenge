@@ -100,6 +100,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         /***************************************************
          * Start Your Code Here For Stretch #2
          ***************************************************/
+        
         var count = 1
         for value in values {
             if let val = Int(value) {
