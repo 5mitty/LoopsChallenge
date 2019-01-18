@@ -101,7 +101,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
          * Start Your Code Here For Stretch #2
          ***************************************************/
         
-        var count = 1
         for value in values {
             if let val = Int(value) {
                 if Int(maximum)! < val {
@@ -128,6 +127,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
          * Start Your Code Here For Stretch #3
          ***************************************************/
         
+        for value in values {
+//            let vay = Int(value)!
+            sum += Int(value)!
+        }
 
         
         /***************************************************
@@ -145,7 +148,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
          * Start Your Code Here For Stretch #4
          ***************************************************/
         
-
+        for value in values {
+            if value < minimum {
+                minimum = value
+                index += 1
+            } else {
+                index += 1
+            }
+        }
         
         /***************************************************
          * End Your Code Here For Stretch #4
@@ -163,7 +173,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
          * Start Your Code Here For Stretch #5
          ***************************************************/
         
-
+        for names in namesAndScores {
+            output += "\(names.key): \(names.value)\n"
+        }
+        
         
         /***************************************************
          * End Your Code Here For Stretch #5
